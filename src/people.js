@@ -51,5 +51,3 @@ export default class TodoList extends React.Component {
     );
   }
 }
-
-// render(<TodoList />, document.getElementById("root"));
