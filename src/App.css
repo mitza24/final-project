@@ -58,6 +58,7 @@
 .buttoncards{
   float:left;
   width: 50%;
+  height: 10%;
 }
 .cardsContainer{
   width: 100%;
@@ -69,7 +70,40 @@
 }
 .btn-primary {
 max-height: 20%;
+
+
 }
+
+.alert-danger {
+  background: linear-gradient(#02224d,#7FB3D5 );
+  color: #fff;
+}
+input{
+  color: #02224d;
+}
+textarea {
+  color:#02224d;
+}
+.btn-default {
+  color: #02224d;
+  background-color: #fff;
+}
+body {
+   color: #02224d;
+  
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: #02224d;
+}
+button {
+  color:#02224d;
+}
+
+
+
+
 /*
 .btn-toolbar .btn, .btn-toolbar .btn-group, .btn-toolbar .input-group {
   float: none;

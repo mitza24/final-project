@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import People from './people.js';
-import alert from './alert';
-//import AlertDismissable from './alert'
+import AlertDismissable from './alert'
 
 import { Button, Grid, Row, Thumbnail, Col, ButtonToolbar, Carousel, CarouselItem, DropdownButton, Dropdown } from 'react-bootstrap';
 import { Nav, ButtonGroup, NavItem, Tab, Modal, FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap';
@@ -68,8 +67,17 @@ class App extends React.Component {
 
         <Row>
           <Col xs={12}>
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Maybe<span class="caret"></span></button>
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">No<span class="caret"></span></button>
+            <AlertDismissable label="Ok">
+              <People/>
+            </AlertDismissable>
+            <AlertDismissable label="Maybe">
+              <People/>
+            </AlertDismissable>
+            <AlertDismissable label="NO">
+              <People/>
+            </AlertDismissable>
+
+            
           
           </Col>
         </Row>
@@ -102,7 +110,6 @@ class App extends React.Component {
                 {/* <HelpBlock>Validation is based on string length.</HelpBlock> */}
               </FormGroup>
             </form>
-            <People />
 
             {/* <FieldGroup
               id="formControlsText"
@@ -126,6 +133,7 @@ class App extends React.Component {
             <FormGroup controlId="formControlsTextarea" bsSize="large">
               <ControlLabel>Write Your Own Text Invitation</ControlLabel>
               <FormControl componentClass="textarea" placeholder="Write Something..." />
+              <Button  block bsStyle="primary" className="buttonsend">Send</Button>
             </FormGroup>
           </Col>
         
@@ -173,7 +181,7 @@ const FormInstance = () => {
     <FormGroup controlId="formControlsTextarea" bsSize="large">
       <ControlLabel>Message</ControlLabel>
       <FormControl componentClass="textarea" placeholder="Write Something..." />
-    </FormGroup>
+      </FormGroup>
 
     {/* <FormGroup>
       <ControlLabel>Static text</ControlLabel>
