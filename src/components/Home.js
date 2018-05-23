@@ -36,14 +36,17 @@ class Home extends React.Component {
 
   render() {
     return (
-      <Grid>
-        <Jumbotron>
+         <Grid>
+         <div>
           <h2>Welcome To Online Invitation Cards Website</h2>
-          </Jumbotron>
+          <div>
+            <h1>Weddings Invitation Cards</h1>
+            <p>We keep adding new touches To keep it a special event (Jim Cooper)</p>
+            </div>
           <link to="/Weddings">
             
           </link>
-          <Grid/>
+         
       
         <Row>
           <Col xs={12}>
@@ -75,15 +78,15 @@ class Home extends React.Component {
 
         <Row>
           <Col xs={12}>
-            <AlertDismissable label="Ok">
+            <AlertDismissable label="Accept with pleasure">
               <People/>
             </AlertDismissable>
-            <AlertDismissable label="Maybe">
+            <AlertDismissable label="Decline with regret">
               <People/>
             </AlertDismissable>
-            <AlertDismissable label="NO">
+            {/* <AlertDismissable label="NO">
               <People/>
-            </AlertDismissable>
+            </AlertDismissable> */}
 
             
           
@@ -91,10 +94,10 @@ class Home extends React.Component {
         </Row>
 
         <Row className="cardRow"> 
-          <Col xs={1} md={3}>
+          <Col xs={1}>
             <ButtonToolbar className="cardsContainer">
                 <Link  to="/weddings" className="btn btn-primary">Weddings Cards</Link>
-                <Link  to="/baptism" className="btn btn-primary">Baptism Cards</Link>
+                <Link  to="/baptism" className="btn btn-primary" >Baptism Cards</Link>
                 <Link  to="/birthdays" className="btn btn-primary">Birthdays Cards</Link>
               </ButtonToolbar>
           </Col>
@@ -144,8 +147,8 @@ class Home extends React.Component {
               <Button  block bsStyle="primary" className="buttonsend">Send</Button>
             </FormGroup>
           </Col>
-        
-      </Grid>
+        </div>
+        </Grid>
     );
   }
 }

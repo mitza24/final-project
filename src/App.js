@@ -6,9 +6,7 @@ import Baptisms from './components/Baptisms';
 import Birthdays from './components/Birthdays';
 import Home from './components/Home';
 import Navbar from './components/CustomNavbar';
-// import Weddings from './Weddings';
-// import Baptisms from './Baptisms';
-// import Birthdays from './Birthdays';
+
 
 class App extends Component {
   render() {
