@@ -17,6 +17,7 @@ h1{
   font-size: 1.6rem;
   text-transform:uppercase;
   text-decoration:underline;
+  font-weight: 600;
 }
 
 .col-xs-12 {
@@ -120,10 +121,74 @@ button {
   background-color:#7FB3D5;
 }
 
-
+.figure-caption{
+font-size: 90%;
+color:#fff;
+text-transform:uppercase;
+font-weight:600;
+}
+.img-thumbnail{
+  padding: .5rem;
+  border:2px solid #868e96;
+  border-radius:0;
+  background-color: #dddddd;
+}
 
 /*
 .btn-toolbar .btn, .btn-toolbar .btn-group, .btn-toolbar .input-group {
   float: none;
 }
 */
+
+.left, .right{
+  padding:2em;
+}
+
+.left{
+  background: green;
+}
+
+.right{
+  background: blue;
+}
+
+.wedding-card{
+  width:360px;
+  position: relative;
+  margin:0 auto;
+}
+
+.wedding-card-image{
+  width:100%;
+}
+
+.wedding-card-text{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:1em;
+}
+
+.blah .wedding-card-text{
+  top:130px;
+  left:auto;
+  width:220px;
+  right:0;
+}
+
+.blah .wedding-card-text::before{
+  content:'save the date'
+}
+
+.blah .and{
+  display:none;
+}
+
+.blah .groom::before{
+  content:'& '
+}
+
+.blah .pleasure{
+  font-size: .9em;
+}

@@ -3,3 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.h3{
+  text-align: center;
+}
+.like-button{
+  width: 12%;
+  margin: 0 auto;
+  display: block;
+  height: 35px;
+}
