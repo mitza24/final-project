@@ -1,6 +1,4 @@
 import React from "react";
-import People from './people';
-import App from './App';
 import { Alert, Button } from 'react-bootstrap';
 
 export default class AlertDismissable extends React.Component {

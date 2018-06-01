@@ -1,18 +1,18 @@
 // Dependencies
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 
 class Button extends Component {
   // Info on React PropTypes:
   // https://facebook.github.io/react/docs/typechecking-with-proptypes.html
-  static propTypes = {
-    email: PropTypes.string.isRequired,
-    formValues: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      email: PropTypes.string.isRequired,
-      message: PropTypes.string.isRequired,
-    }).isRequired,
-  };
+  // static propTypes = {
+  //   email: PropTypes.string.isRequired,
+  //   formValues: PropTypes.shape({
+  //     name: PropTypes.string.isRequired,
+  //     email: PropTypes.string.isRequired,
+  //     message: PropTypes.string.isRequired,
+  //   }).isRequired,
+  // };
 
   constructor(props) {
     super(props);

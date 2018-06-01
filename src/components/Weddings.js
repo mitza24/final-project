@@ -1,17 +1,27 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
-import TodoList from "../people";
-import { Grid, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../../node_modules/picnic/picnic.min.css";
 
-const WeddingImage = ({ name, image, likes, addLike }) => {
+
+
+
+const WeddingImage = ({ name, image, likes, addLike, imageStyle }) => {
+  const location = { 
+    pathname: "/weddings/" + image,
+      state:{
+        imageStyle:imageStyle
+      } 
+    };
   return (
     <div>
       <article class="card">
-        <img src={'/images/'+image+'.jpg'} />
+        <img alt={'background for card'} src={"/images/" + image + ".jpg"} />
         <footer>
           <h3>{name}</h3>
-          <Link to={'/weddings/'+image}>choose this card</Link>
+          {/* <Link to={"/weddings/" + image} params={{ name: name}}>choose this card</Link> */}
+          
+          <Link to={location}>choose this card</Link>          
+          
           <button className="like-button" onClick={addLike}>
             Like {likes}
           </button>
@@ -26,10 +36,10 @@ export default class Weddings extends Component {
     super(props);
     this.state = {
       images: [
-        { name: "kwcgw", image: "card1", likes: 0 },
-        { name: "ervr", image: "card2", likes: 0 },
-        { name: "revr", image: "card3", likes: 0 },
-        { name: "revre", image: "card4", likes: 0 }
+        { imageStyle:'bleuet-love',name: "Bleuet Love", image: "bleuet love", likes: 0 },
+        { imageStyle:'golden-circles',name: "Golden Circles", image: "golden circles", likes: 0 },
+        { imageStyle:'golden-love',name: "Golden Love", image: "golden love", likes: 0 },
+        { imageStyle:'royal-crown',name: "Royal Crown", image: "royal crown", likes: 0 }
       ]
     };
   }
@@ -52,14 +62,15 @@ export default class Weddings extends Component {
         addLike={() => this.addLike(index)}
         likes={image.likes}
         key={index}
+        imageStyle={image.imageStyle}
       />
     ));
   }
   render() {
     const images_list = this.renderImages();
     return <div className="flex two">{images_list}</div>;
-  } 
-  
+  }
+
   /* <div class="container">
 <div class="row">
     <div class="col-md-12">

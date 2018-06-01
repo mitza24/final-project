@@ -7,7 +7,7 @@ import Baptisms from './components/Baptisms';
 import Birthdays from './components/Birthdays';
 import Home from './components/Home';
 import Navbar from './components/CustomNavbar';
-
+import Forms from './components/Form';
 
 class App extends Component {
   render() {
@@ -20,6 +20,7 @@ class App extends Component {
           <Route exact path="/weddings/:cardImage" component={WeddingEditor} />
           <Route exact path="/baptisms" component={Baptisms} />
           <Route exact path="/birthdays" component={Birthdays} />
+          <Route exact path="/forms" component={Forms} />
         </div>
       </Router>
     );

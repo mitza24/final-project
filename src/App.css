@@ -134,6 +134,10 @@ font-weight:600;
   background-color: #dddddd;
 }
 
+
+  
+
+
 /*
 .btn-toolbar .btn, .btn-toolbar .btn-group, .btn-toolbar .input-group {
   float: none;
@@ -145,29 +149,29 @@ font-weight:600;
 }
 
 .left{
-  background: green;
+  height: 400px;
+  
 }
+
+
+
 
 .right{
   background: blue;
+  margin-top: 25%;
+
 }
 
 .wedding-card{
-  width:360px;
+  width:100%;
   position: relative;
   margin:0 auto;
+  
 }
 
 .wedding-card-image{
   width:100%;
-}
-
-.wedding-card-text{
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  padding:1em;
+  height: 100%;
 }
 
 .blah .wedding-card-text{
@@ -191,4 +195,18 @@ font-weight:600;
 
 .blah .pleasure{
   font-size: .9em;
+}
+
+.wedding-card-text{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:1em;
+  
+}
+
+.bleuet-love{
+text-align: center;
+
 }

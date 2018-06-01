@@ -22,7 +22,8 @@ export default class CustomNavbar extends Component {
               Baptisms
             </NavItem>
             <NavItem eventKey={3} componentClass={Link} href="/birthdays" to="/birthdays">
-              Birthdays
+            Birthdays
+          
             </NavItem>
           </Nav>
         </Navbar.Collapse>

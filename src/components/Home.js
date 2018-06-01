@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
+import React from 'react';
 import People from '../people.js';
 import AlertDismissable from '../alert'
 import {Link} from 'react-router-dom';
 
-import { Button, Grid, Row, Thumbnail, Col, ButtonToolbar, Carousel, CarouselItem, DropdownButton, Dropdown } from 'react-bootstrap';
-import { Nav, ButtonGroup, NavItem, Tab, Modal, FormGroup, FormControl, ControlLabel, HelpBlock,Jumbotron } from 'react-bootstrap';
+import { Button, Grid, Row, Col, ButtonToolbar, Carousel } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap';
 
 
 
@@ -167,90 +166,5 @@ const FieldGroup = ({ id, label, help, Carousel, CarouselItem, DropdownButton, .
     </FormGroup>
   );
 }
-
-const FormInstance = () => {
-  return (<div>
-    <FieldGroup
-      id="formControlsText"
-      type="text"
-      label="Your Name"
-      placeholder="Enter Your Name"
-    />
-    <FieldGroup
-      id="formControlsEmail"
-      type="email"
-      label="Email address"
-      placeholder="Enter email"
-    />
-    <FieldGroup
-      id="formControlsFile"
-      type="file"
-      label="Upload Something:"
-    // help="Example block-level help text here."
-    />
-
-    <FormGroup controlId="formControlsTextarea" bsSize="large">
-      <ControlLabel>Message</ControlLabel>
-      <FormControl componentClass="textarea" placeholder="Write Something..." />
-      </FormGroup>
-
-    {/* <FormGroup>
-      <ControlLabel>Static text</ControlLabel>
-      <FormControl.Static>email@example.com</FormControl.Static>
-    </FormGroup> */}
-
-    <Button type="submit">Submit</Button>
-  </div>
-  )
-};
-
-<Grid>
-  <Row>
-    {/* START OF Carousel Column  */}
-    <Col xs={12} md={12}>
-      <Carousel>
-        <Carousel.Item>
-          <div style={{ width: 650, height: 300 }} />
-        </Carousel.Item>
-      </Carousel>
-    </Col>
-    {/* END OF Carousel Column  */}
-  </Row>
-</Grid>
-{/* start of dropdown */ }
-<div class=" dropdown">
-
-  {/* <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Accept
-  <span class="caret"></span></button>
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Maybe
-  <span class="caret"></span></button>
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">No
-  <span class="caret"></span></button> */}
-</div>
-{/* end of dropdown */ }
-<Grid>
-  <Row>
-    {/* START OF form Column  */}
-    <Col xs={12} md={6}>
-      <FormInstance />
-      <div style={{ maxWidth: '200px' }}>
-        {/* <ButtonToolbar >
-          <Button vertical block bsStyle="primary">Weddings Cards</Button>
-          <Button vertical block bsStyle="primary">Baptism Cards</Button>
-          <Button vertical block bsStyle="primary">Birthdays Cards</Button>
-        </ButtonToolbar> */}
-      </div>
-
-    </Col>
-    {/* END OF form Column  */}
-    {/* START OF map Column  */}
-
-    <Col xs={12} md={6}>
-
-    </Col>
-    {/* END OF map Column  */}
-  </Row>
-
-</Grid>
 
 export default Home;
