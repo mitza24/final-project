@@ -4,9 +4,9 @@ import React, { Component } from "react";
 const BirthdayCard1 = ({imageName, birthdayName, place,time, imagePath, imageStyle}) =>
     <div className={"birthday-card "+imageName}>
         <img className="birthday-card-image " src={imagePath} alt='the card'/>
-        <div className= {"birthday-card-text " + imageStyle} >
+        <div className= {"birthday-card-text " + imageStyle} >  
             <h2 className="birthday name">{birthdayName}</h2>
-            <h3 className="pleasure">have the pleasure <br /> to invite you to</h3>
+            <h3 className="pleasure">has the pleasure <br /> to invite you to</h3>
             <h2 className="place">{place}</h2>
             <h2 className="time">{time}</h2>
         </div>
@@ -49,7 +49,7 @@ export default class BirthdayEditor extends Component{
             <div className="flex two">
                 <div>
                     <div className="left">
-                        <BirthdayCard1 imageStyle={imageStyle} imageName={imageName} imagePath={imagePath} babyName={this.state.babyName} familyName={this.state.familyName} place={this.state.place} time={this.state.time}/>
+                        <BirthdayCard1 imageStyle={imageStyle} imageName={imageName} imagePath={imagePath}  birthdayName={this.state.birthdayName} place={this.state.place} time={this.state.time}/>
                         
                     </div>
                     </div>

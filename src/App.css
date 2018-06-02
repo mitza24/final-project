@@ -209,7 +209,26 @@ font-weight:600;
   left:0;
   width:100%;
   }
-
+  .birthday-card-text{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:8em;
+    text-align: justify;
+    color: green;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  
+  .birthday-card-image{
+    width:100%;
+    height: 100%;
+  }
+  .birthday-card{
+    width:100%;
+    position: relative;
+    margin:0 auto; 
+  }
 
 .baptism-card-image{
   width:100%;
@@ -241,6 +260,14 @@ textarea {
 
 
 .bleuet-love{
+  text-align: center;
+  font-family: 'Hi Melody', cursive, sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
+  padding-bottom: 50%;
+  
+}
+
+.royal-crown{
   text-align: center;
   font-family: 'Hi Melody', cursive, sans-serif;
   text-shadow: 4px 4px 4px #aaa;
