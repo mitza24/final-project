@@ -91,7 +91,8 @@ width:200px;
 
 .alert-danger {
   background: linear-gradient(#02224d,#7FB3D5 );
-  color: #fff;
+  color:#02224d;
+  font-size: 150%;
 }
 input{
   color: #02224d;
@@ -99,6 +100,7 @@ input{
 textarea {
   color:#02224d;
 }
+
 .btn-default {
   color: #02224d;
   background-color: #fff;
@@ -149,24 +151,28 @@ font-weight:600;
 }
 
 .left{
-  height: 400px;
+  height:500px;
+  width: 900px;
+  display:inline-flex;
   
 }
 
-
+#card_info{
+  background-color: blue;
+}
 
 
 .right{
-  background: blue;
   margin-top: 25%;
+  margin-left: 35%;
+  margin-right: 5%;
 
 }
 
 .wedding-card{
   width:100%;
   position: relative;
-  margin:0 auto;
-  
+  margin:0 auto; 
 }
 
 .wedding-card-image{
@@ -202,11 +208,65 @@ font-weight:600;
   top:0;
   left:0;
   width:100%;
-  padding:1em;
+  }
+
+
+.baptism-card-image{
+  width:100%;
+  height: 100%;
+}
+
+.baptism-card{
+  width:100%;
+  position: relative;
+  margin:0 auto; 
+}
+
+.baptism-card-text{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:8em;
+  text-align: justify;
   
 }
 
+
+textarea {
+  background-color: blue;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Hi+Melody');
+
+
 .bleuet-love{
-text-align: center;
+  text-align: center;
+  font-family: 'Hi Melody', cursive, sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
+  padding-bottom: 50%;
+  
+}
+
+
+
+
+
+.golden-love{
+  text-align: center;
+  font-family: 'Hi Melody', cursive, sans-serif;
+  
 
 }
+
+
+
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Rancho', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Montez', cursive;
+font-family: 'Patrick Hand SC', cursive;
+font-family: 'Gamja Flower', cursive;
+font-family: 'Hi Melody', cursive; */
+

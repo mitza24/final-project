@@ -2,11 +2,9 @@ import React from 'react';
 import People from '../people.js';
 import AlertDismissable from '../alert'
 import {Link} from 'react-router-dom';
-
+import Form from './Form'
 import { Button, Grid, Row, Col, ButtonToolbar, Carousel } from 'react-bootstrap';
 import { FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap';
-
-
 
 class Home extends React.Component {
   constructor(props, context) {
@@ -147,6 +145,7 @@ class Home extends React.Component {
             </FormGroup>
           </Col>
         </div>
+        <Form/>
         </Grid>
     );
   }
