@@ -40,6 +40,10 @@ export default class Baptisms extends Component {
         { imageStyle:'royal-crown',name: "Royal Crown", image: "royal crown", likes: 0 },
         { imageStyle:'bleuet-love',name: "Bleuet Love", image: "bleuet love", likes: 0 },
         { imageStyle:'golden-circles',name: "Golden Circles", image: "golden circles", likes: 0 },
+        { imageStyle:'golden-love',name: "Golden Love", image: "golden love", likes: 0 },
+        { imageStyle:'royal-crown',name: "Royal Crown", image: "royal crown", likes: 0 },
+        { imageStyle:'bleuet-love',name: "Bleuet Love", image: "bleuet love", likes: 0 },
+        { imageStyle:'golden-circles',name: "Golden Circles", image: "golden circles", likes: 0 },
         
       ]
     };

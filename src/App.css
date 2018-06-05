@@ -146,28 +146,31 @@ font-weight:600;
 }
 */
 
-.left, .right{
+.card-left, .card-right{
   padding:2em;
 }
 
-.left{
+.card-left{
   height:500px;
-  width: 900px;
   display:inline-flex;
-  
+  overflow: hidden;
+  width:100%;  
+  object-fit: cover;
+}
+
+.card-left img{
+  margin-left:50%;
+  transform: translateX(-50%);
+}
+
+.card-right{
+  margin-top: 25%;
 }
 
 #card_info{
   background-color: blue;
 }
 
-
-.right{
-  margin-top: 25%;
-  margin-left: 35%;
-  margin-right: 5%;
-
-}
 
 .wedding-card{
   width:100%;
@@ -176,16 +179,14 @@ font-weight:600;
 }
 
 .wedding-card-image{
-  width:100%;
-  height: 100%;
+  /* width:100%;
+  height: 100%; */
+  margin-left:50%;
+  transform: translateX(-50%);
+
 }
 
-.blah .wedding-card-text{
-  top:130px;
-  left:auto;
-  width:220px;
-  right:0;
-}
+
 
 .blah .wedding-card-text::before{
   content:'save the date'
@@ -203,25 +204,31 @@ font-weight:600;
   font-size: .9em;
 }
 
-.wedding-card-text{
+
+ .wedding-card-text{
   position: absolute;
-  top:0;
+  top:5px;
   left:0;
   width:100%;
-  }
+  padding:0em;
+  text-align: justify;
+  color:rgb(2, 2, 71);
+  text-shadow: 4px 4px 4px #aaa;
+  line-height: 200%;
+  } 
   .birthday-card-text{
+    
     position: absolute;
     top:0;
     left:0;
     width:100%;
-    padding:8em;
+    padding:8em; 
     text-align: justify;
     color: green;
     text-shadow: 4px 4px 4px #aaa;
   }
   
   .birthday-card-image{
-    width:100%;
     height: 100%;
   }
   .birthday-card{
@@ -231,8 +238,10 @@ font-weight:600;
   }
 
 .baptism-card-image{
-  width:100%;
-  height: 100%;
+  /* width:100%;
+  height: 100%; */
+  margin-left:50%;
+  transform: translateX(-50%);
 }
 
 .baptism-card{
@@ -273,6 +282,14 @@ textarea {
   text-shadow: 4px 4px 4px #aaa;
   padding-bottom: 50%;
   
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  margin-top: auto;
 }
 
 

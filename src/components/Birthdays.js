@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../../node_modules/picnic/picnic.min.css";
-
-
-
-
 const BirthdayImage = ({ name, image, likes, addLike, imageStyle }) => {
   const location = { 
     pathname: "/birthdays/" + image,
@@ -40,8 +36,12 @@ export default class Birthdays extends Component {
         { imageStyle:'bleuet-love',name: "Bleuet Love", image: "bleuet love", likes: 0 },
         { imageStyle:'golden-circles',name: "Golden Circles", image: "golden circles", likes: 0 },
         { imageStyle:'golden-love',name: "Golden Love", image: "golden love", likes: 0 },
-        
-      ]
+        { imageStyle:'royal-crown',name: "Royal Crown", image: "royal crown", likes: 0 },
+        { imageStyle:'bleuet-love',name: "Bleuet Love", image: "bleuet love", likes: 0 },
+        { imageStyle:'golden-circles',name: "Golden Circles", image: "golden circles", likes: 0 },
+        { imageStyle:'golden-love',name: "Golden Love", image: "golden love", likes: 0 },
+       
+        ]
     };
   }
   addLike = index => {

@@ -48,13 +48,13 @@ export default class BirthdayEditor extends Component{
         return (
             <div className="flex two">
                 <div>
-                    <div className="left">
+                    <div className="card-left">
                         <BirthdayCard1 imageStyle={imageStyle} imageName={imageName} imagePath={imagePath}  birthdayName={this.state.birthdayName} place={this.state.place} time={this.state.time}/>
                         
                     </div>
                     </div>
                 <div>
-                    <div className="right" id="card_info">
+                    <div className="card-right" id="card_info">
 
                         <input placeholder="birthday name" onChange={this.onChangeBirthdayName}/>
                         <input placeholder="place"      onChange={this.onChangePlace}/>

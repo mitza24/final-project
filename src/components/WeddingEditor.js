@@ -12,9 +12,9 @@ const WeddingCard1 = ({
   <div className={"wedding-card " + imageName}>
     <img className="wedding-card-image " src={imagePath} alt="the card" />
     <div className={"wedding-card-text " + imageStyle}>
-      <h2 className="bride">{brideName}</h2>
-      <h3 className="and">and</h3>
       <h2 className="groom">{groomName}</h2>
+      <h3 className="and">and</h3>
+      <h2 className="bride">{brideName}</h2>
       <h3 className="pleasure">
         have the pleasure <br /> to invite you to
       </h3>
@@ -28,8 +28,8 @@ export default class WeddingEditor extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      brideName: "Ms Bride",
       groomName: "Mr Groom",
+      brideName: "Ms Bride",
       place: "Place",
       time: "Time"
     };
@@ -42,15 +42,15 @@ export default class WeddingEditor extends Component {
     const time = evt.target.value;
     this.setState({ time: time });
   };
-
-  onChangeBrideName = evt => {
-    const brideName = evt.target.value;
-    this.setState({ brideName: brideName });
-  };
   onChangeGroomName = evt => {
     const groomName = evt.target.value;
     this.setState({ groomName: groomName });
   };
+  onChangeBrideName = evt => {
+    const brideName = evt.target.value;
+    this.setState({ brideName: brideName });
+  };
+  
   render() {
     console.log(this.props.location);
     const image = this.props.location.pathname;
@@ -61,7 +61,7 @@ export default class WeddingEditor extends Component {
     return (
       <div className="flex two">
         <div>
-          <div className="left">
+          <div className="card-left">
             <WeddingCard1
               imageStyle={imageStyle}
               imageName={imageName}
@@ -74,9 +74,9 @@ export default class WeddingEditor extends Component {
           </div>
         </div>
         <div>
-          <div className="right" id="card_info">
-            <input placeholder="bride name" onChange={this.onChangeBrideName} />
+          <div className="card-right" id="card_info">
             <input placeholder="groom name" onChange={this.onChangeGroomName} />
+            <input placeholder="bride name" onChange={this.onChangeBrideName} />
             <input placeholder="place" onChange={this.onChangePlace} />
             <input placeholder="time" onChange={this.onChangeTime} />
           </div>
