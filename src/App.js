@@ -7,6 +7,7 @@ import Birthdays from './components/Birthdays';
 import WeddingEditor from './components/WeddingEditor';
 import BaptismEditor from './components/BaptismEditor';
 import BirthdayEditor from './components/BirthdayEditor';
+import Email from './components/Email';
 
 import Home from './components/Home';
 import Navbar from './components/CustomNavbar';
@@ -25,6 +26,12 @@ class App extends Component {
           <Route exact path="/weddings/:cardImage" component={WeddingEditor} />
           <Route exact path="/baptisms/:cardImage" component={BaptismEditor} />
           <Route exact path="/birthdays/:cardImage" component={BirthdayEditor} />
+          <Route exact path="/email" component={Email}/>
+          <Route exact path="/birthdays/:cardImage/:email" component={Email} />
+          <Route exact path="/weddings/:cardImage/:email" component={Email} />
+          <Route exact path="/baptisms/:cardImage/:email" component={Email} />
+        
+          
           
           
          

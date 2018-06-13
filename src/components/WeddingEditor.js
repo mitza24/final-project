@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Button} from 'react-bootstrap'
 
 const WeddingCard1 = ({
   brideName,
@@ -59,7 +60,7 @@ export default class WeddingEditor extends Component {
     const imageName = arr[2];
     const imagePath = "/images/" + imageName + ".jpg";
     return (
-      <div className="flex two">
+      <div className="flex one two-600">
         <div>
           <div className="card-left">
             <WeddingCard1
@@ -71,6 +72,9 @@ export default class WeddingEditor extends Component {
               place={this.state.place}
               time={this.state.time}
             />
+          </div>
+          <div>
+          <Button bsStyle="primary">Send</Button>
           </div>
         </div>
         <div>

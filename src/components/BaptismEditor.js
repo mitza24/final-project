@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Button} from 'react-bootstrap'
 
 
 const BaptismCard1 = ({babyName, imageName, familyName, place,time, imagePath, imageStyle}) =>
@@ -51,12 +51,16 @@ export default class BaptismEditor extends Component{
         const imageName = arr[2]
         const imagePath = '/images/'+imageName+'.jpg'
         return (
-            <div className="flex two">
+            <div className="flex one two-600">
                 <div>
                     <div className="card-left">
                         <BaptismCard1 imageStyle={imageStyle} imageName={imageName} imagePath={imagePath} babyName={this.state.babyName} familyName={this.state.familyName} place={this.state.place} time={this.state.time}/>
                         
                     </div>
+                    <div>
+                   <Button bsStyle="primary">Send</Button>
+                    </div>
+
                     </div>
                 <div>
                     <div className="card-right" id="card_info">

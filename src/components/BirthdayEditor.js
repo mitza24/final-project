@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import {Button} from 'react-bootstrap'
 
 const BirthdayCard1 = ({imageName, birthdayName, place,time, imagePath, imageStyle}) =>
     <div className={"birthday-card "+imageName}>
@@ -9,6 +9,7 @@ const BirthdayCard1 = ({imageName, birthdayName, place,time, imagePath, imageSty
             <h3 className="pleasure">has the pleasure <br /> to invite you to</h3>
             <h2 className="place">{place}</h2>
             <h2 className="time">{time}</h2>
+        
         </div>
     </div>
 
@@ -46,13 +47,16 @@ export default class BirthdayEditor extends Component{
         const imageName = arr[2]
         const imagePath = '/images/'+imageName+'.jpg'
         return (
-            <div className="flex two">
+            <div className="flex one two-600">
                 <div>
                     <div className="card-left">
                         <BirthdayCard1 imageStyle={imageStyle} imageName={imageName} imagePath={imagePath}  birthdayName={this.state.birthdayName} place={this.state.place} time={this.state.time}/>
-                        
+                         </div>
                     </div>
+                    <div>
+                    <Button bsStyle="primary">Send</Button>
                     </div>
+
                 <div>
                     <div className="card-right" id="card_info">
 

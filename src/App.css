@@ -172,20 +172,6 @@ font-weight:600;
 }
 
 
-.wedding-card{
-  width:100%;
-  position: relative;
-  margin:0 auto; 
-}
-
-.wedding-card-image{
-  /* width:100%;
-  height: 100%; */
-  margin-left:50%;
-  transform: translateX(-50%);
-
-}
-
 
 
 .blah .wedding-card-text::before{
@@ -205,17 +191,7 @@ font-weight:600;
 }
 
 
- .wedding-card-text{
-  position: absolute;
-  top:5px;
-  left:0;
-  width:100%;
-  padding:0em;
-  text-align: justify;
-  color:rgb(2, 2, 71);
-  text-shadow: 4px 4px 4px #aaa;
-  line-height: 200%;
-  } 
+ 
   .birthday-card-text{
     
     position: absolute;
@@ -223,7 +199,7 @@ font-weight:600;
     left:0;
     width:100%;
     padding:8em; 
-    text-align: justify;
+    text-align: center;
     color: green;
     text-shadow: 4px 4px 4px #aaa;
   }
@@ -237,28 +213,7 @@ font-weight:600;
     margin:0 auto; 
   }
 
-.baptism-card-image{
-  /* width:100%;
-  height: 100%; */
-  margin-left:50%;
-  transform: translateX(-50%);
-}
 
-.baptism-card{
-  width:100%;
-  position: relative;
-  margin:0 auto; 
-}
-
-.baptism-card-text{
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  padding:8em;
-  text-align: justify;
-  
-}
 
 
 textarea {
@@ -267,7 +222,7 @@ textarea {
 
 @import url('https://fonts.googleapis.com/css?family=Hi+Melody');
 
-
+  
 .bleuet-love{
   text-align: center;
   font-family: 'Hi Melody', cursive, sans-serif;
@@ -302,8 +257,92 @@ label {
   
 
 }
+.like-button{
+  transition-timing-function:ease-in-out,ease-out;
+  transition-property: left;
+  transition-duration: 0.2s;
+  transition-delay: 1s;
+  /* left:47%;
+  top:27%; */
+  background: url('/home/codi/Documents/projects/final project/public/images/download.svg');
+  background-color:royalblue;
 
 
+}
+.like-button:hover{
+  background-color:darkblue !important;
+  box-shadow:black;
+  opacity:100%;
+  left:80%;
+}
+
+.wedding-card-text{
+  position: absolute;
+  top:5px;
+  left:0;
+  width:100%;
+  padding:0em;
+  text-align: center;
+  color:rgb(2, 2, 71);
+  text-shadow: 4px 4px 4px #aaa;
+  line-height: 200%;
+
+
+
+
+
+  } 
+
+.wedding-card-image{
+  /* width:100%;
+  height: 100%; */
+  margin-left:50%;
+  transform: translateX(-50%);
+  
+
+}
+.wedding-card{
+  width:100%;
+  position: relative;
+  margin:0 auto; 
+  /* transform: rotate(1turn);
+  transition:transform 5s ease-in; */
+}
+
+
+.baptism-card-image{
+  /* width:100%;
+  height: 100%; */
+  margin-left:50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+.baptism-card{
+  width:100%;
+  position: relative;
+  margin:0 auto; 
+  
+}
+
+.baptism-card-text{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding:8em;
+  text-align: center;
+  
+}
+
+
+ .card:hover img{
+  transform: rotate(1turn);
+  transition:transform 5s ease-in;
+
+ }
 
 /* font-family: 'Great Vibes', cursive;
 font-family: 'Handlee', cursive;
