@@ -9,17 +9,46 @@ export default class Email extends React.Component {
 render(){
 return(
     
-    <div>
-    <fieldset class="flex two">
-  <label><input type="Email" placeholder=" Compose Email"/></label>
-  <label><input type="text" placeholder="To"/></label>
-  <label><input type="text" placeholder="Subject"/></label>
-</fieldset>
-<textarea placeholder="message"></textarea>
+<div>
+
+  <div class="third">
+    <input class="stack" placeholder="First name" />
+    <input class="stack" placeholder="Last name" />
+    <input class="stack" placeholder="Email" />
+  </div>
+
+  <div class="third">
+    <textarea class="stack" placeholder="message"></textarea>
+    <button class="stack icon-paper-plane">Send</button>
+  </div>
+  <br/>
+  <hr/>
+  <br/>
+  <table class="primary">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Coming</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Francisco</td>
+        <td>francisco@gmail.com</td>
+        <td>
+          <label>
+            <input type="checkbox" disabled/>
+            <span className="checkable"></span>
+          </label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-
-
 
 )
 }
 }
+
+
