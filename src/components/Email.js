@@ -24,7 +24,8 @@ return(
   <br/>
   <hr/>
   <br/>
-  <table class="primary">
+
+   {/* <table class="primary">
     <thead>
       <tr>
         <th>Name</th>
@@ -44,8 +45,8 @@ return(
         </td>
       </tr>
     </tbody>
-  </table>
-</div>
+  </table> */}
+</div> 
 
 )
 }
